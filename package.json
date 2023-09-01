@@ -1,0 +1,30 @@
+{
+  "name": "trpc-project-study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev:all": "ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
+    "dev:trpc": "ts-node-dev --transpile-only --ignore-watch node_modules src/serverTRPC.ts",
+    "dev:express": "ts-node-dev --transpile-only --ignore-watch node_modules src/serverExpress.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/lodash": "^4.14.197",
+    "@types/pg": "^8.10.2",
+    "drizzle-kit": "^0.19.13",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.4.1",
+    "@trpc/server": "^10.37.1",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.28.4",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "pg": "^8.11.3",
+    "zod": "^3.22.2"
+  }
+}
